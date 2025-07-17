@@ -60,7 +60,7 @@ def create_window():
                                            orientation='h', key="-STOP-")],
         [sg.Text("Risk per Trade %"), sg.Slider(range=(0.5,10), default_value=1.0, resolution=0.1,
                                                orientation='h', key="-RISK-")],
-        [sg.Text("Target P&L Ratio"), sg.Slider(range=(1.0,5.0), default_value=2.0, resolution=0.1,
+        [sg.Text("Target P&L Ratio"), sg.Slider(range=(0,10.0), default_value=2.0, resolution=0.1,
                                              orientation='h', key="-RATIO-")],
         [sg.Frame("Results", [
             [sg.Text("Stop-Loss Price", size=(18,1)), sg.Text("", key="-STOPPRICE-")],
